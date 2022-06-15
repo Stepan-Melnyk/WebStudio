@@ -1,10 +1,11 @@
-.section-two__list{
-   display: flex;
-
-   padding-left: 0px;
+.section-two{
+   display: none;
+   @include nq(desktop){
+      display: block;
+   }
 }
-.section-two__list .section-two__item + .section-two__item{
-   margin-left: 30px;
+.section-two__list{
+   padding-left: 0px;
 }
 .section-two__position{
    position: relative;

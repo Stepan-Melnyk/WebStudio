@@ -1,4 +1,5 @@
 @import "./utils/normalize";
+@import "./utils/mixin";
 @import "./utils/variables";
 @import "./components/header";
 @import "./components/logo";
@@ -8,6 +9,7 @@
 @import "./components/section-three";
 @import "./components/section-four";
 @import "./components/footer";
+
 @import "./components/modal";
 
 @import "./components/portfolio-filter";

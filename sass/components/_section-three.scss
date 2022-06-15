@@ -1,10 +1,7 @@
 .section-three__list{
-   display: flex;
-
    padding-left: 0px;
 }
 .section-three{
-   padding-top: 94px;
    background-color: #F5F4FA;
 
 }
@@ -12,10 +9,13 @@
    background-color: $prymary-background-color;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
+      &:not(:last-child){
+         margin-bottom: 30px;
+   }
 }
-.section-three__list .section-three__card + .section-three__card{
-   margin-left: 30px;
-}
+// .section-three__list .section-three__card + .section-three__card{
+//    margin-left: 30px;
+// }
 .section-three__team-description{
    padding: 30px 32px;
 }
@@ -34,15 +34,19 @@
    margin-bottom: 16px;
 }
 .section-three__social-links{
-   display: flex
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .section-three__social-link{
    width: 44px;
    height: 44px;
 
+
       &:not(:last-child){
          margin-right: 10px;
       }
+      
 }
 .section-three__link-item{
    display: flex;

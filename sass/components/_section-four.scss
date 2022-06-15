@@ -1,12 +1,16 @@
-.section-four{
-   padding-top: 94px;
-}
 .section-four__list{
-   display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .section-four__item{
-  &:not(:last-child){margin-right: 30px;}
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
 }
+// .section-four__item{
+//   &:not(:last-child){margin-right: 30px;}
+// }
 .section-four__link{
   display: flex;
   align-items: center;
