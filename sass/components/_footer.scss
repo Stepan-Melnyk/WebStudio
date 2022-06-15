@@ -33,22 +33,26 @@
 
    font-style: normal;
 }
-.container-footer{
-   display: flex;
-   align-items: baseline;
-}
+// .container-footer{
+//    display: flex;
+//    align-items: baseline;
+// }
 .footer-address{
    margin-right: 70px;
 }
 .social-link__title,
 .subscription__title{
    display: inline-block;
+   
    color: #FFFFFF;
    margin-bottom: 20px;
    text-transform: uppercase;
 }
 .social-link__list{
    display: flex;
+   
+   align-items: center;
+   justify-content: center;
 }
 .social-link__item{
    width: 44px;
@@ -81,9 +85,9 @@
 .subscription{
    margin-left: 93px;
 }
-.subscription__form{
-   display: flex;
-}
+// .subscription__form{
+//    display: flex;
+// }
 .subscription__email{
    width: 360px;
    height: 50px;

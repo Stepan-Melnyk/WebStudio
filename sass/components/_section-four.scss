@@ -4,6 +4,7 @@
   justify-content: center;
 }
 .section-four__item{
+  width: calc(100% - 2 * 30px) / 2;
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 30px;
