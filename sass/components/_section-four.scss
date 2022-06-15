@@ -1,0 +1,30 @@
+.section-four{
+   padding-top: 94px;
+}
+.section-four__list{
+   display: flex;
+}
+.section-four__item{
+  &:not(:last-child){margin-right: 30px;}
+}
+.section-four__link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      
+  width: 170px;
+  height: 92px;
+
+  fill: $icon-color;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+      fill: $icon-color-hover;
+      border-color: $icon-color-hover;
+    }
+}

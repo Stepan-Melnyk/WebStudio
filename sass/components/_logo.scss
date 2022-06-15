@@ -1,0 +1,21 @@
+.logo{
+   text-decoration: none;
+   color: $prymary-text-color;
+
+   font-family: Raleway, sans-serif;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+   font-weight: bold;
+}
+.logo__text-web{
+      color: $accent-color;
+   }
+.logo_text-studio{
+      color: $prymary-white-color;
+   }
+.logo-footer{
+   display: block;
+
+   margin-bottom: 20px;
+}
