@@ -30,4 +30,7 @@
       left: 0%;
       width: 100%;
    }
+   @include nq(tablet){
+      display: none;
+   }
 }
