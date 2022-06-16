@@ -1,8 +1,12 @@
 .header{
-   padding-top: 24px;
-   padding-bottom: 25px;
+   padding-top: 16px;
+   padding-bottom: 16px;
 
    border-bottom: 1px solid #ECECEC;
+   @include nq(desktop){
+   padding-top: 24px;
+   padding-bottom: 25px;
+   }
 }
 .header-container{
    display: flex;

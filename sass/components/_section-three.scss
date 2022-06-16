@@ -1,5 +1,14 @@
 .section-three__list{
    padding-left: 0px;
+
+   @include nq(tablet){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      &:nth-child(-n + 2){
+         margin-bottom: 30px;
+      }
+   }
 }
 .section-three{
    background-color: #F5F4FA;
@@ -11,6 +20,14 @@
    border-radius: 0px 0px 4px 4px;
       &:not(:last-child){
          margin-bottom: 30px;
+      }
+   @include nq(tablet){
+      &:nth-child(2n){
+         margin-left: 30px;
+      }
+      &:nth-child(-n + 2){
+         margin-bottom: 30px;
+      }
    }
 }
 // .section-three__list .section-three__card + .section-three__card{
