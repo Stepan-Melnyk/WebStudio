@@ -1,4 +1,5 @@
 .header{
+   position: relative;
    padding-top: 16px;
    padding-bottom: 16px;
 
@@ -6,6 +7,7 @@
    @include nq(desktop){
    padding-top: 24px;
    padding-bottom: 25px;
+   
    }
 }
 .header-container{
