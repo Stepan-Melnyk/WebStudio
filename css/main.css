@@ -377,6 +377,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-nav__list,
@@ -481,6 +484,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-weight: bold;
+  padding-right: 267px;
 }
 
 .logo__text-web {
@@ -506,6 +510,12 @@ img {
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -519,16 +529,21 @@ img {
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
   background-color: #ffffff;
 }
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (max-width: 767.98px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+  }
 }
 
 .hero {

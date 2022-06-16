@@ -4,6 +4,10 @@
    padding: 0px;
    border: none;
    background-color: transparent;
+
+   @include nq(tablet){
+      display: none;
+   }
 }
 .menu-button .icon-cross {
    display: none;
@@ -15,14 +19,15 @@
    display: none;
 }
 .menu-container{
-   display: none;
-   position: absolute;
-   top: 100%;
-   left: 0;
-   width: 100%;
-
    background-color: #ffffff;
       &.is-open{
          display: block;
       }
+   @include nq(mobile-only){
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      width: 100%;
+   }
 }
