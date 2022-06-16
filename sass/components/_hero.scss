@@ -1,14 +1,17 @@
 .hero{
-   background-color: $secondary-background-color;
+  background-color: $secondary-background-color;
 
-   background-image:
-    linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-   url("../images/background.jpg");
-   background-repeat: no-repeat;
-   background-position: center;
+  background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("/images/header_s.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include nq(tablet){
+    background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("/images/header_m.jpg");
+  }
+  
+  @include nq(desktop){
+    background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("/images/header_l.jpg");
+  }  
 }
 .hero.section{
   max-width: 1600px;
@@ -17,6 +20,11 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+
+  @include nq(desktop){
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title{
   color: $prymary-white-color;
@@ -24,11 +32,14 @@
 
   font-size: 26px;
   line-height: 1.61;
-  // font-size: 44px;
-  // line-height: 1.36;
   font-weight: 900;
 
   margin-bottom: 30px;
+
+  @include nq(desktop){
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__button{
   background-color: $accent-color;

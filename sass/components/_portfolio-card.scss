@@ -1,22 +1,24 @@
 .section-portfolio{
-   padding-top: 94px;
-   padding-bottom: 94px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   // padding-top: 94px;
+   // padding-bottom: 94px;
 }
 .portfolio-list{
-   display: flex;
+   // display: flex;
    flex-wrap: wrap;
    margin: 0px;
    padding: 0px;
 }
-.portfolio-list__item{
-   box-sizing: border-box;
-   &:nth-child(-n + 6){
-      margin-bottom: 30px;
-   }
-   &:not(:nth-child(3n)) {
-      margin-right: 30px;
-   }
-}
+// .portfolio-list__item{
+//    box-sizing: border-box;
+//    &:nth-child(-n + 6){
+//       margin-bottom: 30px;
+//    }
+//    &:not(:nth-child(3n)) {
+//       margin-right: 30px;
+//    }
+// }
 .portfolio-list__link{
    display: block;
    text-decoration: none;

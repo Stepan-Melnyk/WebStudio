@@ -4,20 +4,28 @@
   justify-content: center;
 }
 .section-four__item{
-  width: calc(100% - 2 * 30px) / 2;
+  width: calc((100% - 2 * 30px) / 2);
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 30px;
+  &:nth-child(-n + 4){
+    margin-bottom: 30px;
+  }
+
+  @include nq(desktop){
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    &:not(:last-child){margin-right: 30px;}
+  }
 }
-// .section-four__item{
-//   &:not(:last-child){margin-right: 30px;}
-// }
+
 .section-four__link{
   display: flex;
   align-items: center;
   justify-content: center;
       
-  width: 170px;
+  // width: 170px;
   height: 92px;
 
   fill: $icon-color;

@@ -1,14 +1,31 @@
 .section-one{
    font-size: 14px;
    line-height: 1.71;
-
+}
+.section-one__list{
+   @include nq(tablet){
+      display: flex;
+      flex-wrap: wrap;
+   }
 }
 .section-one__item{
-   // margin-right: 30px;
-   // width: 270px;
-   //    &:last-child{
-   //       margin-right: 0px
-   //    }
+   &:not(:last-child){
+      margin-bottom: 30px;
+   }
+   @include nq(tablet) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin-left: 15px;
+      &:nth-child(-n + 2){
+         margin-bottom: 30px;
+      }
+   }
+   @include nq(desktop){
+   margin-right: 30px;
+   width: 270px;
+      &:last-child{
+         margin-right: 0px
+      }
+   }
 }
 .section-one__icon{
    display: flex;
