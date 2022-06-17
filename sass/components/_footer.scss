@@ -2,17 +2,40 @@
    padding: 60px 0px;
    background-color: $secondary-background-color;
 }
+.logo-footer{
+   @include nq(not-desktop){
+      display: inline-block;
+      padding: 0px;
+   }
+}
 .contacts{
    font-size: 14px;
    line-height: 1.71;
+   letter-spacing: 0.03em;
    font-weight: 400;
    font-style: normal;
+   @include nq(tablet){
+      display: flex;
+      align-items: baseline;
+   }
+}
+.contacts-container{
+   @include nq(tablet-only){
+      padding-left: 76px;
+      margin-right: 165px;
+   }
+   @include nq(desktop){
+      margin-right: 70px;
+   }
 }
 .contacts__list{
    padding-left: 0px;
+   @include nq(not-desktop){
+      margin-bottom: 60px;
+   }
 }
 .contacts__item:not(:last-child){
-   margin-bottom: 9px;
+   margin-bottom: 8px;
 }
 .contacts__link{
    text-decoration: none;
@@ -28,17 +51,33 @@
       }
 }
 .contacts__address{
-   margin-bottom: 9px;
+   margin-bottom: 8px;
    color: $prymary-white-color;
 
    font-style: normal;
 }
 .container-footer{
-   display: flex;
-   align-items: baseline;
+   @include nq(mobile-only){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   @include nq(tablet){
+      display: block;
+   }
+   @include nq(desktop){
+      display: flex;
+      align-items: baseline;
+   }
 }
 .footer-address{
-   margin-right: 70px;
+      @include nq(tablet){
+      display: flex;
+      }
+      @include nq(not-desktop){
+         text-align: center;
+      }
+      
 }
 .social-link__title,
 .subscription__title{
@@ -79,15 +118,30 @@
       }
 }
 .subscription{
-   margin-left: 93px;
+   @include nq(mobile-only){
+      padding-top: 60px;
+   }
+   @include nq(not-desktop){
+      text-align: center;
+   }
+   @include nq(desktop){
+      margin-left: 93px;
+   }
 }
 .subscription__form{
-   display: flex;
+   @include nq(mobile-only){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   @include nq(desktop){
+      display: flex;
+   }
+
 }
 .subscription__email{
-   width: 360px;
+   width: 450px;
    height: 50px;
-   margin-right: 12px;
    padding-left: 16px;
    color: #FFFFFF;
 
@@ -96,13 +150,26 @@
       &:focus{
       background-color: $secondary-background-color;
       }
+   @include nq(tablet-only){
+      display: flex;
+      margin-left: 166px;
+      width: 400px;
+   }
+   @include nq(not-desktop){
+      margin-bottom: 20px;
+   }
+   @include nq(desktop){
+       width: 358px;
+       margin-right: 12px;
+   }
 }
 .subscription__button{
-   display: flex;
+   display: inline-flex;
    align-items: center;
    justify-content: center;
    cursor: pointer;
    font-weight: 700;
+   width: 215px;
    padding: 10px 28px 10px 29px;
    font-size: 16px;
    line-height: 1.88;
