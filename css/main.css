@@ -535,12 +535,6 @@ img {
   font-weight: bold;
 }
 
-@media screen and (max-width: 767.98px) {
-  .logo {
-    padding-right: 267px;
-  }
-}
-
 .logo__text-web {
   color: #2196F3;
 }
@@ -555,9 +549,8 @@ img {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  position: absolute;
+  left: 90%;
   margin: 0px;
   padding: 0px;
   border: none;
@@ -663,6 +656,14 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196F3;
+}
+
+.menu-button {
+  fill: #212121;
+}
+
+.menu-button:hover, .menu-button:focus {
+  fill: #2196F3;
 }
 
 .hero {

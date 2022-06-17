@@ -8,9 +8,6 @@
    letter-spacing: 0.03em;
    font-weight: bold;
    
-   @include nq(mobile-only){
-      padding-right: 267px;
-   }
 }
 .logo__text-web{
       color: $accent-color;

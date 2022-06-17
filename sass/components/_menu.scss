@@ -1,5 +1,6 @@
 .menu-button{
-   display: inline-flex;
+   position: absolute;
+   left: 90%;
    margin: 0px;
    padding: 0px;
    border: none;
@@ -87,3 +88,11 @@
    text-decoration: none;
    color: $accent-color;
 }
+.menu-button{
+   fill: #212121;
+   &:hover,
+   &:focus{
+      fill: $accent-color;
+   }
+}
+
