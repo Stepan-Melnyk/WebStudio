@@ -173,7 +173,14 @@
             <h2 class="container__title">Наша команда</h2>
             <ul class="section-three__list">
                <li class="section-three__card">
-                  <img class="section-three__team-foto" src="./images/team1.jpg" alt="фото коллеги1" width="270">
+                  <img 
+                  class="section-three__team-foto" 
+                  srcset="
+                  ./images/team1.jpg 1x
+                  ./images/team1@2x.jpg 2x"
+                  src="./images/team1.jpg" 
+                  alt="фото коллеги1"
+                  >
                   <div class="section-three__team-description">
                      <h3 class="section-three__name">Игорь Демьяненко</h3>
                      <p class="section-three__team-position">Product Designer</p>
