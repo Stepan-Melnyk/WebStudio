@@ -56,10 +56,13 @@
    line-height: 1.18;
    text-decoration: none;
    color: $prymary-text-color;
+   @include nq(to-mobile){
+      font-size: 35px;
+   }
 }
 .menu-contact__list{
    margin-top: auto;
-   padding-bottom: 64px;
+   margin-bottom: 64px;
 }
 .menu-contact__item{
    &:not(:last-child){
@@ -77,14 +80,30 @@
       color: $secondary-text-color;
       font-size: 24px;
       line-height: 1.17;
-   } 
+   }
+   @include nq(to-mobile){
+      &.tel{
+         font-size: 28px;}
+   }
+      &.email{
+         font-size: 18px;
+   }
 }
 .menu-social__list{
    display: flex;
+   @include nq(to-mobile){
+      display: flex;
+      flex-wrap: wrap;
+   }
 }
 .menu-social__item{
    &:not(:last-child){
       margin-right: 20px;
+   }
+   @include nq(to-mobile){
+      &:nth-child(-n + 2){
+         margin-bottom: 10px;
+      }
    }
 }
 
