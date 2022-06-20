@@ -944,6 +944,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-three__team-foto {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-three__team-foto {
+    width: 270px;
+  }
+}
+
 .section-three__team-description {
   padding: 30px 32px;
 }
