@@ -5,6 +5,7 @@
    padding: 0px;
    border: none;
    background-color: transparent;
+   z-index: 3;
 
    @include nq(tablet){
       display: none;
@@ -23,6 +24,7 @@
    padding-top: 48px;
    padding-left: 40px;
    background-color: #ffffff;
+   z-index: 2;
       &.is-open{
          display: block;
       }
