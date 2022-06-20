@@ -267,7 +267,8 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-body.modal-open {
+body.modal-open,
+body.menu-open {
   overflow: hidden;
 }
 
@@ -578,9 +579,11 @@ img {
 
 .menu-container {
   padding-top: 48px;
+  padding-bottom: 48px;
   padding-left: 40px;
   background-color: #ffffff;
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .menu-container.is-open {

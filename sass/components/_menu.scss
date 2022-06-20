@@ -22,9 +22,11 @@
 }
 .menu-container{
    padding-top: 48px;
+   padding-bottom: 48px;
    padding-left: 40px;
    background-color: #ffffff;
    z-index: 2;
+   overflow-y: scroll;
       &.is-open{
          display: block;
       }

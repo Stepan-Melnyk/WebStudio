@@ -15,7 +15,8 @@ body {
 
    font-family: Roboto, sans-serif;
 }
-body.modal-open{
+body.modal-open,
+body.menu-open{
    overflow: hidden;
 }
 h1,
