@@ -20,6 +20,7 @@
    opacity: 0;
    pointer-events: none;
    visibility: hidden;
+   
 }
 .modal{
   position: absolute;
@@ -27,16 +28,20 @@
   background-color: $prymary-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px; 
-
+  max-width: 450px;
+  top: 50%;
+  @include nq(mobile-only){
+    top: 55%;
+  }
   @include nq(mobile){
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 450px;
-    max-height: 609px;
   }
-  
+  @include nq(desktop){
+    max-width: 528px;
+  }
 }
 .modal__btn-close{
   position: absolute;
