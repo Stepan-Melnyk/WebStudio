@@ -20,6 +20,7 @@
    display: none;
 }
 .menu-container{
+   padding-top: 48px;
    padding-left: 40px;
    background-color: #ffffff;
       &.is-open{
@@ -27,17 +28,19 @@
       }
    @include nq(mobile-only){
       display: none;
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 0%;
       left: 0;
       width: 100%;
+      height: 100vh;
+      &.is-open{
+         display: flex;
+         flex-direction: column;
+      }
    }
    @include nq(tablet){
       display: none;
    }
-}
-.navigation-list{
-   padding-bottom: 302px;
 }
 .navigation-list__item{
    &:not(:last-child){
@@ -51,6 +54,7 @@
    color: $prymary-text-color;
 }
 .menu-contact__list{
+   margin-top: auto;
    padding-bottom: 64px;
 }
 .menu-contact__item{
